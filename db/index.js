@@ -44,8 +44,6 @@ mongoose.connect(dbPath).then(() => {
     console.log("Connnection Error : " + error)
 })
 
-// test
-
 cron.schedule('* * * * Monday', () => {
     console.log('Running backup job...');
     backupMongoDB();
