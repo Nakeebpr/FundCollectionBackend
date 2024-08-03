@@ -1,1 +1,0 @@
-{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"key":{"coordinates":"2dsphere"},"name":"coordinates_2dsphere","background":true,"2dsphereIndexVersion":{"$numberInt":"3"}}],"uuid":"e8c5cefc8d674662b33b5cb7e8cc0b60","collectionName":"shipwrecks","type":"collection"}
