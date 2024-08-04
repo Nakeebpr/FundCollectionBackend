@@ -6,6 +6,7 @@ const mongoSanitize = require("express-mongo-sanitize")
 const xss = require("xss-clean")
 const cors = require("cors")
 const path = require("path");
+const morgan = require("morgan")
 
 const user = require("./routes")
 
@@ -24,6 +25,7 @@ app.use(mongoSanitize())
 app.use(cors())
 app.use(express.json())
 app.use(xss())
+app.use(morgan("tiny"))
 
 app.use("/", user)
 
